@@ -1,10 +1,11 @@
 import os
+from base64 import b64encode
 
 
 def main():
     env_name = os.environ['INPUT_ENV_NAME']
     data = os.environ[env_name]
-    set_output(data)
+    set_output(b64encode(data.encode("ascii")))
 
 
 def set_output(data):
