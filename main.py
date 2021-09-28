@@ -8,7 +8,8 @@ def main():
 
 
 def set_output(data):
-    print(f"::add-mask:: {data}", flush=True)
+    print(f"::add-mask:: RANDOM_KEY", flush=True)
+    print(f'echo "RANDOM_KEY={data}" >> $GITHUB_ENV')
     print(f"::set-output name=encoded_string::{data}", flush=True)
 
 
