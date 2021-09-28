@@ -8,6 +8,9 @@ inputs:
   export_var_name:
     description: 'encoded var name'
     required: true
+outputs:
+  encoded_string:
+    description: 'Output'
 runs:
   using: 'docker'
   image: 'Dockerfile'
