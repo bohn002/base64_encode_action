@@ -16,4 +16,3 @@ jobs:
       - name: Check outputs
         run: |
           echo "${{ steps.selftest.outputs.encoded_string }}"
-          echo ${{ steps.selftest.outputs.encoded_string }} | base64 --decode
