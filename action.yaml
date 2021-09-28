@@ -5,11 +5,8 @@ inputs:
   env_name:
     description: 'ENV Variable name'
     required: true
-  export_var_name:
-    description: 'encoded var name'
-    required: true
 outputs:
-  encoded_string:
+  encoded_token:
     description: 'Output'
 runs:
   using: 'docker'

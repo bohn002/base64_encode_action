@@ -12,7 +12,6 @@ jobs:
         uses: bohn002/base64_encode_action@main
         with:
           env_name: "RANDOM"
-          export_var_name: "64_RANDOM"
 
       - name: Check outputs
         run: |
