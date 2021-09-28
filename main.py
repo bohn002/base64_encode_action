@@ -8,7 +8,8 @@ def main():
 
 
 def set_output(data):
-    print(f"::set-output name=WEBHOOK_TOKEN::{data}", flush=True)
+    print(f"::add-mask:: {data}", flush=True)
+    print(f"::set-output name=encoded_string::{data}", flush=True)
 
 
 if __name__ == "__main__":
