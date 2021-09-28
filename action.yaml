@@ -1,0 +1,16 @@
+name: 'Base64 Encode ENV'
+description: 'base64 encode a env without exposing it'
+author: 'Nate Bohn'
+inputs:
+  env_name:
+    description: 'ENV Variable name'
+    required: true
+  export_var_name:
+    description: 'encoded var name'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.env_name }}
+    - ${{ inputs.export_var_name }}
