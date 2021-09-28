@@ -16,4 +16,4 @@ jobs:
 
       - name: Check outputs
         run: |
-          echo "${{ env. }}"
+          echo "${{ env.64_RANDOM }}"
