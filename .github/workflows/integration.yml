@@ -1,0 +1,19 @@
+name: Integration Test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      RANDOM: "123456"
+    steps:
+      - uses: actions/checkout@master
+      - name: Self test
+        id: selftest
+        uses: bohn002/random_string_action@main
+        with:
+          env_name: "RANDOM"
+          export_var_name: "64_RANDOM"
+
+      - name: Check outputs
+        run: |
+          echo "${{ env. }}"
