@@ -6,7 +6,7 @@ inputs:
     description: 'ENV Variable name'
     required: true
 outputs:
-  encoded_token:
+  WEBHOOK_TOKEN:
     description: 'Output'
 runs:
   using: 'docker'

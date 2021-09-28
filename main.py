@@ -8,7 +8,7 @@ def main():
 
 
 def set_output(data):
-    print(f"::set-output name=encoded_token::{data}", flush=True)
+    print(f"::set-output name=WEBHOOK_TOKEN::{data}", flush=True)
 
 
 if __name__ == "__main__":
