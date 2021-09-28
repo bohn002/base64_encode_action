@@ -16,4 +16,4 @@ jobs:
 
       - name: Check outputs
         run: |
-          echo "${{ steps.selftest.outputs.encoded_string }}"
+          echo ::add-mask::"${{ steps.selftest.outputs.encoded_string }}"
