@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Self test
         id: selftest
-        uses: bohn002/random_string_action@main
+        uses: bohn002/base64_encode_action@main
         with:
           env_name: "RANDOM"
           export_var_name: "64_RANDOM"
