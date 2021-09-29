@@ -6,7 +6,7 @@ jobs:
     env:
       RANDOM: "123456"
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Self test
         id: selftest
         uses: bohn002/base64_encode_action@main
